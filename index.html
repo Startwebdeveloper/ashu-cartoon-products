@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Ashu Cartoon Products | Useful Products & Amazon Finds</title>
+  <meta name="description" content="Discover useful, interesting and hand-picked products on Ashu Cartoon Products. Explore product recommendations and check them on Amazon.">
+  <meta name="keywords" content="cartoon products, Amazon finds, affiliate recommendations, gift ideas, cool gadgets">
+  <meta name="author" content="Ashu Cartoon Products">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ashu Cartoon Products | Useful Products & Amazon Finds">
+  <meta property="og:description" content="Discover useful, interesting and hand-picked products on Ashu Cartoon Products. Explore product recommendations and check them on Amazon.">
+  <meta property="og:image" content="images/product1.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Ashu Cartoon Products | Useful Products & Amazon Finds">
+  <meta property="twitter:description" content="Discover useful, interesting and hand-picked products on Ashu Cartoon Products. Explore product recommendations and check them on Amazon.">
+
+  <!-- Favicon Mock -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🧸</text></svg>">
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" id="header-logo">
+        <h1 class="logo-text">🧸 Ashu <span>Cartoon</span></h1>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#explore-products-section" class="nav-link">Categories</a>
+        <a href="#about" class="nav-link">About</a>
+      </nav>
+
+      <!-- Hamburger Menu Button (Mobile View) -->
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <div class="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <a href="#" class="nav-link active">Home</a>
+    <a href="#explore-products-section" class="nav-link">Categories</a>
+    <a href="#about" class="nav-link">About</a>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <h2 class="hero-title">Discover Products <mark>Worth Buying</mark></h2>
+          <p class="hero-subtitle">Hand-picked products, useful finds, and interesting deals — all in one place.</p>
+          <a href="#explore-products-section" class="btn-brutal" id="explore-cta">
+            Explore Products
+          </a>
+        </div>
+
+        <div class="hero-art">
+          <!-- Wiggling Mascot Sticker -->
+          <div class="mascot-sticker" aria-hidden="true">
+            <span class="sticker-emoji">🧸</span>
+            <span class="sticker-text">Cool Picks Everyday!</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Controls Section (Search & Category Filters)
+         ========================================================================== -->
+    <section class="controls-section" id="explore-products-section">
+      <div class="container">
+        <div class="search-filter-wrapper">
+          
+          <!-- Product Search Input Box -->
+          <div class="search-box-container">
+            <!-- Inline Search SVG Icon -->
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="text" id="search-input" class="search-input" placeholder="Search by product name, category, or keyword..." aria-label="Search products">
+          </div>
+
+          <!-- Category Filtering Tabs -->
+          <div class="category-container" aria-label="Product Categories">
+            <button class="category-tab active" data-category="All">All</button>
+            <button class="category-tab" data-category="Electronics">Electronics</button>
+            <button class="category-tab" data-category="Home">Home</button>
+            <button class="category-tab" data-category="Study">Study</button>
+            <button class="category-tab" data-category="Fitness">Fitness</button>
+            <button class="category-tab" data-category="Accessories">Accessories</button>
+            <button class="category-tab" data-category="Other">Other</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Products Section (Dynamic Grid)
+         ========================================================================== -->
+    <section class="products-section">
+      <div class="container">
+        <div class="product-grid" id="product-grid">
+          <!-- Products will be generated dynamically by JavaScript -->
+          <noscript>
+            <div class="no-results-banner">
+              <span class="no-results-emoji">⚠️</span>
+              <h3 class="no-results-title">JavaScript Required</h3>
+              <p class="no-results-text">Please enable JavaScript in your browser to view our hand-picked affiliate products.</p>
+            </div>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         About & Disclosure Section
+         ========================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-card">
+          
+          <div class="about-info">
+            <h3 class="about-title">About Ashu Cartoon Products</h3>
+            <p class="about-description">
+              Welcome to <strong>Ashu Cartoon Products</strong>! We curate the coolest, most interesting, and useful products across the web. Whether you are looking for cute room decor, smart desktop gadgets, study accessories, or fun gifts, we've got you covered.
+            </p>
+            
+            <!-- Dynamic styling helper list -->
+            <div class="about-badge-list" aria-hidden="true">
+              <span class="badge-brutal" style="background-color: var(--primary);">Hand-picked</span>
+              <span class="badge-brutal" style="background-color: var(--secondary);">Ad-free</span>
+              <span class="badge-brutal" style="background-color: var(--accent-green);">Direct Links</span>
+            </div>
+            
+            <br>
+
+            <!-- Affiliate Disclosure Box -->
+            <div class="disclosure-box">
+              <h4>Affiliate Disclosure</h4>
+              <p>
+                <strong>Disclosure:</strong> Some links on Ashu Cartoon Products are affiliate links. If you purchase a product through our links, we may earn a commission at no additional cost to you.
+              </p>
+              <p style="margin-top: 8px;">
+                As an Amazon Associate, I earn from qualifying purchases. This helps support the site so we can keep finding awesome products for you!
+              </p>
+            </div>
+          </div>
+
+          <div class="about-illust">
+            <div class="about-avatar" aria-hidden="true">🐼</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer Section
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <div class="footer-brand">
+          <h3>🧸 Ashu Cartoon Products</h3>
+          <p>Discover useful, interesting and hand-picked products and cool Amazon finds.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#explore-products-section">Explore Products</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-disclosure">
+          <h4>Amazon Associate Disclaimer</h4>
+          <p>As an Amazon Associate I earn from qualifying purchases. If you buy through our links, we may earn a small referral commission at absolutely zero extra cost to you.</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Ashu Cartoon Products. All rights reserved.</p>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="btn-back-to-top" aria-label="Scroll back to top">
+          Back to Top &uarr;
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Application Entry Script -->
+  <script src="script.js"></script>
+</body>
+</html>
