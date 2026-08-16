@@ -28,6 +28,15 @@ const products = [
     link: "https://link.amazon/B06rBdczY" // Replace with your actual Amazon Affiliate link
   },
   {
+    name: "Rocket Toy for Kids",
+    image: "images/product4.png",
+    description: "Lefan Air Powered Flying Rocket Toy for Kids, Foam Rocket Launcher Set with Foot Pump, Indoor & Outdoor Garden Game for Boys & Girls Age 3 4 5 6 7 8+ Flies Up to 150 ft No Batteries Required ",
+    price: "₹284",
+    category: "Kids",
+    badge: "Popular",
+    link: "https://link.amazon/B00cSUjgI" // Replace with your actual Amazon Affiliate link
+  },
+  {
     name: "Comming soon",
     image: "images/product3.png",
     description: "This product is coming soon. Stay tuned for more details.",
